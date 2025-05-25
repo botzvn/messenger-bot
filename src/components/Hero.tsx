@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   const handleDownload = () => {
-    window.open("https://example.com/download", "_blank");
+    window.open("https://github.com/botzvn/messenger-bot/releases/tag/0.0.1", "_blank");
   };
 
   return (
@@ -35,7 +35,7 @@ const Hero = () => {
           <iframe
             className="w-full h-full rounded-xl"
             style={{ maxHeight: "70vh", minHeight: "50vh", maxWidth: "50vw" }}
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1&origin=https://lovableproject.com"
+            src="https://www.youtube.com/embed/CEWKdQM2cUo"
             title="Demo Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -50,14 +50,17 @@ const Hero = () => {
             <Button
               onClick={handleDownload}
               size="lg"
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 lg:px-12 py-4 lg:py-6 text-lg lg:text-xl font-semibold rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-purple-500/25"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 lg:px-12 py-4 lg:py-6 text-lg lg:text-xl font-semibold rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-purple-500/25 cursor-pointer"
             >
               <Download className="w-5 h-5 lg:w-6 lg:h-6 mr-2 lg:mr-3" />
               Download Now
             </Button>
 
             {/* Button Glow */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+            <div
+              className="cursor-pointer absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"
+              onClick={handleDownload}
+            ></div>
           </div>
         </div>
       </div>
