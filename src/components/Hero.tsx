@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-pink-500/20 rounded-full blur-xl animate-pulse delay-500"></div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <div className="relative z-10 flex-1 flex flex-col justify-center px-8 sm:px-12 lg:px-16 max-w-7xl mx-auto w-full">
         {/* Header */}
         <div className="text-center mb-8 lg:mb-12 animate-fade-in">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent mb-4 lg:mb-6 leading-tight">
@@ -43,11 +43,12 @@ const Hero = () => {
                   <div className="aspect-video relative">
                     <iframe
                       className="w-full h-full rounded-xl"
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1&origin=https://lovableproject.com"
                       title="Demo Video"
                       frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
+                      referrerPolicy="strict-origin-when-cross-origin"
                     ></iframe>
                     
                     {/* Play Button Overlay */}
@@ -67,7 +68,7 @@ const Hero = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center animate-fade-in delay-500 pb-8">
+        <div className="text-center animate-fade-in delay-500 pb-12">
           <div className="mb-6 lg:mb-8">
             <p className="text-base lg:text-lg text-gray-300 mb-6 px-4">
               Ready to get started? Download now and join thousands of satisfied users.
