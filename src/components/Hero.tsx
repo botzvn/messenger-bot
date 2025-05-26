@@ -26,7 +26,7 @@ const Hero = () => {
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed px-4">
             {/* //tạo một câu kích thích về Messenger Bot */}
-            Master the art of the lure – smooth ride till the slaughter
+            Chat Smarter - Sell Faster - Automate with AI
           </p>
         </div>
 
